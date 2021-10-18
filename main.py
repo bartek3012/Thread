@@ -17,7 +17,9 @@ def calculate(X_train, X_test, y_train, y_test, result, clfs):
 
 
 clfs = {
-    'SVM': SVC()
+    'SVM': SVC(),
+    'SVM2': SVC(),
+    'GNB': GaussianNB()
 }
 
 # datasets = ['appendicitis', 'australian', 'balance', 'banknote', 'breastcan', 'breastcancoimbra', 'bupa', 'coil2000',
@@ -25,7 +27,7 @@ clfs = {
 #             'mammographic', 'monk-2', 'phoneme', 'pima', 'popfailures', 'ring', 'sonar', 'soybean', 'spambase',
 #             'spectfheart', 'titanic', 'twonorm', 'vowel0', 'waveform', 'wine', 'wisconsin']
 
-datasets = ['appendicitis']
+datasets = ['egzo', 'mammographic', 'monk-2']
 
 time_cross_validation = 5
 
